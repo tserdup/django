@@ -1,0 +1,61 @@
+li a{
+	text-decoration: none;
+	font-size:23px;
+	text-indent:10px;
+	color:snow;
+
+}
+li{
+	list-style:none;
+	display:inline;
+	text-indent:10px;
+	position: relative;
+	top:19px;
+
+}
+#c{
+	position:relative;
+	left:930px;
+	color:white;
+	border:2px solid grey;
+	padding:15px;
+	border-radius:30px;
+	transition: all;
+	transition-duration:2s;
+	
+	
+}
+#l{
+	width:100%;
+	position:relative;
+	left:900px;
+	color:white;
+	border:2px solid grey;
+	padding:15px;
+	border-radius:30px;
+	transition: all;
+	transition-duration:1s;
+
+	
+
+}
+#c:hover{
+	border:3.5px solid red;
+
+}
+#l:hover{
+	border:3.5px solid red;
+}
+ul{
+	background-color:rgb(13,16,49);
+	height:70px;
+	margin:0;
+
+}
+body{
+	margin:0;
+	
+}
+.all{
+		
+}

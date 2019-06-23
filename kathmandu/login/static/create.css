@@ -1,0 +1,47 @@
+.create-main{
+	position: relative;
+	left:37%;
+	margin:20px;
+
+}
+.create-main button{
+	width:240px;
+	height:34px;
+	outline:none;
+	margin:20px;
+	background-color:dodgerblue;
+	border:none;
+	font-size:22px;
+	color:white;
+	border-radius: 10px;
+}
+.create-main button:hover{
+	background-color:black;
+}
+.input{
+	width:270px;
+	height:30px;
+	font-size:21px;
+	text-indent:4px;
+	margin:10px;
+	outline:none;
+	border:none;
+	border-bottom:1px solid;
+
+}
+#text{
+	font-size:22px;
+	font-weight:340px;
+	letter-spacing:10px;
+}
+body{
+	margin:0;
+	padding:0;
+	max-width:100%;
+
+}
+.create-main h1{
+	font-size:34px;
+	color:grey;
+	letter-spacing:5px;
+}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}  {% endblock %}
+{% block content %}
+{% load static %}
+<link rel ="stylesheet" type ="text/css" href ="{% static 'detail.css' %}">
+<p class ="rent">{{ detail.yourproperty }} is on Rent</p>
+<p class ="area">District {{ detail.District }} /City {{ detail.City }}<br> Area {{ detail.Area }}</p>
+<h4 class ="room">Total Room is {{ detail.room }}</h4>
+<h3 class ="price">Per Month {{ detail.price }}.Rs</h3>
+<span id ="d">Water</span><p class ="water"> {{ detail.water }}</p>
+<span id ="d">Description</span><p class ="description">{{ detail.description }}</p>
+{% endblock %}

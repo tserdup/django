@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel ="stylesheet" type ="text/css" href ="{% static 'home.css' %}">
+<p id ="find">Find your Dream home</p>
+<div class ="home">
+
+<a href ="{% url 'app:room' %}"><p id ="p">Searching for Room</p></a>
+<a href = ""><p id ="p">Offer a Room </p></a>
+</div>
+
+{% endblock %}

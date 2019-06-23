@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'create.css' %}">
+<div class ="create-main">
+	<h1>Registration </h1>
+	<form method ="post">
+		{% csrf_token %}
+	<lable id ="text"for ="firstname">
+	First Name
+	</lable>
+	<br>
+	{{ create.firstname }}
+	<br>
+	<lable id ="text" for ="Lastname">
+	Last Name
+	</lable>
+	<br>
+	{{ create.lastname }}<br>
+	<lable id ="text" for ="username">
+	Username
+	</lable>
+	<br>
+	{{ create.username }}<br>
+	<lable id ="text" for ="password">
+	Password
+	</lable>
+	<br>
+	{{ create.password }}<br>
+	<lable id ="text" for ="confirm">
+	Confirm
+	</lable>
+	<br>
+	{{ create.confirm }}<br>
+	<button type ="submit">Submit</button>
+</form>
+</div>
+
+
+
+
+{% endblock %}

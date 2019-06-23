@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel ="stylesheet" type ="text/css" href ="{% static 'room.css' %}">
+	<form action ="" method ="GET">
+	<input class ='Find' type ="search" name ="search" placeholder ="search here">
+</form>
+
+<div class ="kathmandu">
+
+<h1 class ="kathmandu-text">
+
+	<span id ="text">Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit. Illo mollitia neque, quae architecto rem fugit in adipisci <br>laboriosam vero! Rerum totam repellendus ab non officia consequatur <br>inventore perferendis provident alias.</span>
+</h1>
+</div>
+
+
+
+{% for room in room %}
+<div class ="room">
+
+
+<a href ="{% url 'app:detail' room.id %}"><img id ="img"src ="{{ room.img.url }}"width ="380" height ="270"></a>
+<p id ="rent">{{ room.yourproperty }} is on Rent</p>
+<p id ="place">{{ room.District }}/{{ room.City }}/{{ room.Area }}</p>
+<p id ="price">per month {{ room.price }}.Rs</p>
+<p id ="date">{{ room.date }}</p>
+<div class ="click">
+<a href ="{% url 'app:detail' room.id %}"><p>Click <br>Detail</p></a>
+</div>
+</div>
+</div>
+
+{% endfor %}
+
+
+{% endblock %}

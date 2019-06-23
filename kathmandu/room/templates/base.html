@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block titel %} {% endblock %}</title>
+	<link rel ="stylesheet" type ="text/css" href ="{% static 'base.css' %}">
+</head>
+<body>
+	<div class ="all">
+	<header>
+	<nav>
+	<ul>
+		<li><a id ="k" href ="{% url 'app:home' %}">KOtha</a></li>
+		<li id ="l"><a href ="{% url 'register:login' %}">Login</a></li>
+		<li id = "c"><a href ="{% url 'register:create' %}">Create</a></li>
+	</ul>
+</nav>
+</header>
+
+</div>
+
+{% block content %}
+
+
+{% endblock %}
+{% block footer %}
+
+{% endblock %}
+</body>
+</html>
